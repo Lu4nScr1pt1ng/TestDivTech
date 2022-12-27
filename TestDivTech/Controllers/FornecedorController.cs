@@ -60,7 +60,7 @@ namespace TestDivTech.Controllers
                 var cnpj = context.FORNECEDOR!.FirstOrDefault(x => x.cnpj == fornecedor.cnpj);
                 if (cnpj != null)
                 {
-                    return BadRequest(new { message = "Cnpj já cadastrado" });
+                    return BadRequest(new { message = "CNPJ já cadastrado" });
                 }
 
                 context.FORNECEDOR!.Add(fornecedor);
